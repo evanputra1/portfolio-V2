@@ -1,5 +1,10 @@
-import './testimonials.css';
 import {Data} from './Data';
+import './testimonials.css';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { Pagination } from 'swiper/modules';
 
 const Testimonials = () => {
   return (
@@ -7,9 +12,32 @@ const Testimonials = () => {
         <h2 className="section__title">Testimonial</h2>
         <span className="section__subtitle">My Clients Say</span>
 
-        <div className="testimonial__container">
-            {Data.map}
-        </div>
+        <Swiper className="testimonial__container" 
+        grabCursor={true}
+        spaceBetween={24}
+        pagination={{
+            dynamicBullets: true,
+        }}
+        breakpoints={{
+          576: {
+            slidesPerView: 2,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 48,
+          },
+        }} 
+        modules={[Pagination]}>
+            {Data.map(({id, image, title, description}) => {
+                return (
+                    <SwiperSlide className="testimonial__card" key={id}>
+                        <img src={image} alt="" className='testimonial__img' />
+                        <h3 className="testimonial__name">{title}</h3>
+                        <p className="testimonial__description">{description}</p>
+                    </SwiperSlide>
+                )
+            })}
+        </Swiper>
     </section>
   )
 }
