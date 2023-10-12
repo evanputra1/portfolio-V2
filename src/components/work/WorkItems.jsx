@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 const WorkItems = ({item}) => {
   return (
     <div className="work__card" key={item.id}>
