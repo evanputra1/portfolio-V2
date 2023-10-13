@@ -96,7 +96,7 @@
 
 @media screen and (max-width: 768px) {
     .work__container {
-        grid-template-columns: max-content;
+        grid-template-columns: 2;
     }
 }
 
