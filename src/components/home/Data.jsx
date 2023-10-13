@@ -16,7 +16,7 @@ const Data = () => {
         </svg>
       </h1>
       <h3 className="home__subtitle">Fullstack Developer</h3>
-      <p className="home__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo amet quisquam earum nam excepturi consequatur?</p>
+      <p className="home__description">I&apos;m a 7th-semester bachelor&apos;s degree student living in Bekasi, and I&apos;m really passionate and dedicated to my studies.</p>
 
       <a href="#contact" className="button button--flex">
         Say Hello

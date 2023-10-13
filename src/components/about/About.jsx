@@ -1,5 +1,5 @@
 import "./about.css";
-import AboutImg from "../../assets/about.jpg";
+import AboutImg from "../../assets/my-profile.jpg";
 import CV from "../../assets/evancv-v2.4.1.pdf";
 import Info from "./Info";
 
@@ -14,7 +14,7 @@ const About = () => {
 
         <div className="about__data">
           <Info />
-          <p className="about__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum modi, cumque quod animi nobis quasi, hic quibusdam ipsum alias culpa quo minus eveniet. Officiis, porro.</p>
+          <p className="about__description">I have a background in Computer Science from Bina Sarana Informatika University. While studying what a Software Developer entails, I have successfully developed skills in Fullstack Development.</p>
           <a download="" href={CV} className="button button--flex">Download CV
             <svg
                 className="button__icon"

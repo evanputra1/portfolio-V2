@@ -1,4 +1,4 @@
-import Work1 from "../../assets/work1.jpg";
+import Work1 from "../../assets/weather-app.jpg";
 import Work2 from "../../assets/work2.jpg";
 import Work3 from "../../assets/work3.jpg";
 import Work4 from "../../assets/work4.jpg";
@@ -8,8 +8,9 @@ export const projectsData = [
     {
         id: 1,
         image: Work1,
-        title: 'Web Design',
+        title: 'Weather App',
         category: 'web',
+        link: 'https://periksa-cuaca.vercel.app/',
     },
     {
         id: 2,
@@ -38,9 +39,9 @@ export const projectsData = [
 ]
 
 export const projectsNav = [
-    {
-        name: 'all',
-    },
+    // {
+    //     name: 'all',
+    // },
     {
         name: 'web',
     },

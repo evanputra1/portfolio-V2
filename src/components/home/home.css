@@ -1,9 +1,11 @@
 .home__container {
-    row-gap: 7rem;
+    row-gap: 5rem;
 }
 
 .home__content {
-    grid-template-columns: 116px repeat(2, 1fr);
+    /* grid-template-columns: 300px repeat(2, 1fr); */
+    display: flex;
+    justify-content: center;
     padding-top: 5.5rem;
     column-gap: 2rem;
     align-items: center;
@@ -75,7 +77,7 @@
 }
 
 .home__img {
-    background: url(../../assets/profile.jpg);
+    background: url(../../assets/my-profile.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -100,7 +102,7 @@
 }
 
 .home__scroll {
-    margin-left: 9.25rem;
+    margin-left: 7rem;
 }
 
 .wheel {
@@ -150,7 +152,7 @@
     }
 
     .home__description {
-        max-width: initial;
+        max-width: 400px;
         margin-bottom: var(--mb-2-5);
     }
 
@@ -167,16 +169,27 @@
 
 @media screen and (max-width: 768px) {
     .home__content {
-        grid-template-columns: 0.5fr 3fr;
+        /* grid-template-rows: repeat(2, 1fr); */
+        display: block;
         padding-top: 3.5rem;
     }
 
     .home__img {
-        order: initial;
-        justify-self: initial;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
         box-shadow: inset 0 0 0 8px rgb(255 255 255 / 30%);
-        width: 200px;
-        height: 200px;
+        width: 230px;
+        height: 230px;
+        margin-bottom: var(--mb-2-5);
+    }
+
+    .home__subtitle {
+        padding: 0;
+    }
+
+    .home__subtitle::before {
+        display: none;
     }
 
     .home__scroll {
@@ -184,12 +197,26 @@
     }
 
     .home__data {
-        grid-column: 1/3;
+        /* grid-row: 1; */
+        text-align: center;
+    }
+
+    .home__description {
+        max-width: none;
+        padding: 0 5rem;
     }
 }
 
-/* @media screen and (max-width: 576px) {
-} */
+@media screen and (max-width: 576px) {
+    .home__img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .home__description {
+        padding: 0;
+    }
+}
 
 @media screen and (max-width: 350px) {
     .home__img {
