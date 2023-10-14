@@ -1,0 +1,5 @@
+.achievement__button {
+    display: flex;
+    justify-content: center;
+    margin-top: var(--mb-2);
+}

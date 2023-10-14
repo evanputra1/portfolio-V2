@@ -1,17 +1,16 @@
 import { useState, useEffect } from "react";
-import { projectsData, projectsNav } from "./Data";
-import WorkItems from "./WorkItems";
+import { achievementData, achievementNav } from "./Data";
 
-const Works = () => {
-    const [item, setItem] = useState({name: 'web'});
+const Achievements = () => {
+    const [item, setItem] = useState({name: 'frontend'});
     const [projects, setProjects] = useState([]);
     const [active, setActive] = useState(0);
 
     useEffect(() => {
         if(item.name === '') {
-            setProjects(projectsData);
+            setProjects(achievementData);
         } else {
-            const newProjects = projectsData.filter((project) => {
+            const newProjects = achievementData.filter((project) => {
                 return project.category.toLowerCase() === item.name;
             });
             setProjects(newProjects)
@@ -26,7 +25,7 @@ const Works = () => {
   return (
     <div>
         <div className="work__filters">
-            {projectsNav.map((item, index) => {
+            {achievementNav.map((item, index) => {
                 return (
                     <span onClick={(e) => {
                         handleClick(e, index);
@@ -37,11 +36,20 @@ const Works = () => {
 
         <div className="work__container container grid">
             {projects.map((item) => {
-                return <WorkItems item={item} key={item.id}/>
+                return (
+                    <div className="work__card" key={item.id}>
+                        <img src={item.image} alt="" className="work__img" />
+                        <h3 className="work__title">{item.title}</h3>
+                    </div>
+                )
             })}
         </div>
+        <div className="achievement__button">
+            <a href="https://www.linkedin.com/in/evan-ananda-putra-056176222/details/certifications/" target="_blank" className="button button--flex" rel="noreferrer">View More</a>
+        </div>
     </div>
+
   )
 }
 
-export default Works
+export default Achievements

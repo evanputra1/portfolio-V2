@@ -11,6 +11,7 @@ import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
 import ScrollUp from './components/scrollup/ScrollUp';
 import Work from './components/work/Work';
+import Achievement from './components/achievement/Achievement';
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
         <Skills />
         <Services />
         <Qualification />
+        <Achievement />
         <Work />
         <Testimonials />
         <Contact />
