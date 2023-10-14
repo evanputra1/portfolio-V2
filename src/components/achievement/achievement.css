@@ -1,5 +1,110 @@
+.achievement__filters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.75rem;
+    margin-bottom: var(--mb-2);
+}
+
+.achievement__item {
+    cursor: pointer;
+    color: var(--title-color);
+    padding: 0.25rem 0.75rem;
+    font-weight: var(--font-medium);
+    border-radius: 0.5rem;
+    text-transform: capitalize;
+    transition: .3s;
+}
+
+.achievement__item:hover {
+    background-color: var(--title-color);
+    color: var(--container-color);
+}
+
+.achievement__container {
+    grid-template-columns: repeat(3, max-content);
+    gap: 3rem;
+    justify-content: center;
+}
+
+.achievement__card {
+    background-color: var(--container-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1.25rem;
+    border-radius: 1rem;
+}
+
+.achievement__img {
+    width: 295px;
+    border-radius: 1rem;
+    margin-bottom: var(--mb-1);
+}
+
+.achievement__title {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-0-5);
+}
+
 .achievement__button {
     display: flex;
     justify-content: center;
     margin-top: var(--mb-2);
+}
+
+.active-work {
+    background-color: var(--title-color);
+    color: var(--container-color);
+}
+
+@media screen and (max-width: 1200px) {
+    .achievement__container {
+        gap: 1.25rem;
+        grid-template-columns: repeat(2, max-content);
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .achievement__container {
+        gap: 1.25rem;
+        grid-template-columns: repeat(2, max-content);
+    }
+
+    .achievement__card {
+        padding: 1rem;
+    }
+
+    .achievement__img {
+        margin-bottom: 0.75rem;
+    }
+
+    .achievement__title {
+        margin-bottom: 0.25rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .achievement__container {
+        grid-template-columns: 2;
+    }
+
+    .achievement__img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .achievement__container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .achievement__item {
+        font-size: var(--small-font-size);
+    }
+
+    .achievement__filters {
+        column-gap: 0.25rem;
+    }
 }

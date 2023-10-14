@@ -24,22 +24,22 @@ const Achievements = () => {
 
   return (
     <div>
-        <div className="work__filters">
+        <div className="achievement__filters">
             {achievementNav.map((item, index) => {
                 return (
                     <span onClick={(e) => {
                         handleClick(e, index);
-                    }} className={`${active === index ? 'active-work' : ''} work__item`} key={index}>{item.name}</span>
+                    }} className={`${active === index ? 'active-work' : ''} achievement__item`} key={index}>{item.name}</span>
                 )
             })}
         </div>
 
-        <div className="work__container container grid">
+        <div className="achievement__container container grid">
             {projects.map((item) => {
                 return (
-                    <div className="work__card" key={item.id}>
-                        <img src={item.image} alt="" className="work__img" />
-                        <h3 className="work__title">{item.title}</h3>
+                    <div className="achievement__card" key={item.id}>
+                        <img src={item.image} alt="" className="achievement__img" />
+                        <h3 className="achievement__title">{item.title}</h3>
                     </div>
                 )
             })}
