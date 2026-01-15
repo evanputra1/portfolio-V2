@@ -97,33 +97,34 @@ const Qualification = () => {
                     </div>
                     
                     <div className="qualification__data">
-                        {/* <div>
+                        <div></div>
+                        <div>
                             <span className="qualification__rounder"></span>
                             <span className="qualification__line"></span>
                         </div>
                         <div>
-                            <h3 className="qualification__title">UX Designer</h3>
-                            <span className="qualification__subtitle">Apple Inc - Spain</span>
+                            <h3 className="qualification__title">Drafter</h3>
+                            <span className="qualification__subtitle">PT Cahaya Mutiara Mandiri</span>
                             <div className="qualification__calendar">
-                                <i className="uil uil-calendar-alt"></i> 2020 - 2021
+                                <i className="uil uil-calendar-alt"></i> 2024 - 2024
                             </div>
-                        </div> */}
+                        </div>
                     </div>
                     
                     <div className="qualification__data">
-                        {/* <div>
-                            <h3 className="qualification__title">Web Designer</h3>
-                            <span className="qualification__subtitle">Figma - Spain</span>
+                        <div>
+                            <h3 className="qualification__title">Frontend Web Developer</h3>
+                            <span className="qualification__subtitle">PT Madani Mitra Sinergi</span>
                             <div className="qualification__calendar">
-                                <i className="uil uil-calendar-alt"></i> 2018 - 2020
+                                <i className="uil uil-calendar-alt"></i> 2023 - 2023
                             </div>
                         </div>
                         <div>
                             <span className="qualification__rounder"></span>
                             <span className="qualification__line"></span>
-                        </div> */}
+                        </div>
                     </div>
-                    <p className="qualification__title">Nothing Experience to see.</p>
+                    {/* <p className="qualification__title">Nothing Experience to see.</p> */}
                 </div>
             </div>
         </div>
